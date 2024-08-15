@@ -1,4 +1,4 @@
-# RK839
+# Royal Kludge R65 QMK/VIA
 
 * **Keyboard Maintainer:** [sdk66](https://github.com/sdk66)
 * **Supported Hardware:** Royal Kludge R65 (ANSI)
