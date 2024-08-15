@@ -18,4 +18,4 @@
 
 3. **VIA & SOCD:**  
    `qmk compile -kb rk/r65 -km via-socd`  
-   (Includes VIA and SOCD functionality, similar to Razer's SnapTap and Wooting's SOCD)
+   (Includes VIA and SOCD functionality, similar to Razer's Snap Tap and Wooting's SOCD)
