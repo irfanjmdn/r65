@@ -1,5 +1,7 @@
-## Guide to use the VIA software (image from seller)
-![Image from Shopee](guide.png)
+## View the PCB
+Use https://www.altium.com/viewer/
+![The PCB](pcb.png)
 
-## View the PCB in https://www.altium.com/viewer/
-![alttext](pcb.png)
+## VIA Software Guide
+See the guide from the seller below:
+![Image from Shopee](guide.png)
