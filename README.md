@@ -26,9 +26,10 @@ Included here are all the files for the R65: firmware, keymaps, VIA json, PCB di
    ```bash
    qmk setup
    ```
+   A folder will be installed at `C:/Users/%USERNAME%/qmk_firmware`.
 
 3. **Add Keyboard Files**  
-   Download and move the `rk/r65` folder into `qmk_firmware/keyboards/`.
+   Download this repository and move the `rk/r65` folder into your `qmk_firmware/keyboards/` folder.
 
 4. **Compile the Firmware**  
    Run the following command in QMK MSYS:  
