@@ -12,7 +12,7 @@ Included here are all the files for the R65: firmware, keymaps, VIA json, PCB di
 
 - **Caps Lock Indicator Light**: The Caps Lock indicator light doesn't turn on. This issue is fixable, but I’m not experienced enough to handle it.
 - **RGB Light Effects**: RGB light effects might be slightly misaligned.
-#### For a fully functional firmware without issues, flash the original firmware file located in the `/extras` directory. We don't have the source for this specific precompiled file, unfortunately.
+#### For a fully functional firmware without issues, flash the original firmware file. We don't have the source for this specific precompiled file, unfortunately.
 
 ## Guide
 
