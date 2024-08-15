@@ -46,7 +46,7 @@ Included here are all the files for the R65: firmware, keymaps, VIA json, PCB di
    Download and install [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases).
 
 2. **Load the Firmware File**  
-   Open QMK Toolbox and load the `.bin` or `.hex` file you compiled.
+   Open QMK Toolbox and load the `.bin` or `.hex` file.
 
 3. **Enter Bootloader Mode**  
    Reset the keyboard into bootloader mode.
