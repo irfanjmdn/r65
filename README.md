@@ -1,5 +1,5 @@
 # Royal Kludge R65 QMK/VIA + SOCD feature
-![alt text](r65.png)
+![The Royal Kludge keyboard](r65.png)
 ## Overview
 
 #### This repository only contains essential files for the WIRED version of the Royal Kludge R65 (ANSI layout). For the ISO layout or other Royal Kludge keyboard variants, visit sdk66’s [QMK Firmware Repository](https://github.com/hangshengkeji/qmk_firmware/tree/master/keyboards/rk).
