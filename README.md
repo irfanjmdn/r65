@@ -5,7 +5,7 @@ Files for the Royal Kludge R65 (ANSI, WIRED-ONLY)
 
 1. Install [QMK MSYS](https://msys.qmk.fm).
 2. Open QMK MSYS and run `qmk setup`.
-3. Drag the `rk` folder into `qmk_firmware/keyboards/`.
+3. Download and move the `rk/r65` folder into `qmk_firmware/keyboards/`.
 4. In QMK MSYS, run: `qmk compile -kb rk/r65 -km via` (Options: default/via/via-socd).
 5. Find the `.bin`/`.hex` file in the root `qmk_firmware` folder.
 
