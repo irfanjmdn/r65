@@ -4,7 +4,8 @@
 * **Supported Hardware:** Royal Kludge R65 (ANSI)
 * **Hardware Availability:** [Royal Kludge's official website](http://www.rkgaming.com)
 
-**Built & tested on Windows.** For MacOS/Linux users, refer to the official [QMK docs](https://docs.qmk.fm/newbs_getting_started).
+**Built & tested on Windows.** 
+Read this [guide](https://github.com/irfanjmdn/royalkludge-r65#guide) on how to build the firmware. 
 
 ## Firmware Options
 
