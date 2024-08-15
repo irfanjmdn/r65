@@ -6,7 +6,7 @@ This repository contains essential files for the Royal Kludge R65 (ANSI, WIRED-O
 
 When I bought this keyboard, I was told it was open source, but finding the necessary files was challenging. After weeks of emails and follow-ups, I finally received the QMK firmware for the Royal Kludge R65. Special thanks to [sdk66](https://github.com/sdk66) for sharing these files!
 
-Included here are all the files for the R65: firmware, keymaps, PCB diagram, and an additional SnapTap/SOCD mod that I've added.
+Included here are all the files for the R65: firmware, keymaps, VIA json, PCB diagram, and an additional SnapTap/SOCD mod that I've added.
 
 
 ## Guide
