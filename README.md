@@ -40,7 +40,7 @@ Included here are all the files for the R65: firmware, keymaps, VIA json, PCB di
 5. **Locate the Firmware File**  
    Find the compiled `.bin` or `.hex` file in the root of the `qmk_firmware` folder.
 
-### Installing the Firmware
+### Flashing/Installing the Firmware
 
 1. **Install QMK Toolbox**  
    Download and install [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases).
