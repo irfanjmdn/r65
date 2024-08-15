@@ -12,7 +12,7 @@ Included here are all the files for the R65: firmware, keymaps, VIA json, PCB di
 
 - **Caps Lock Indicator Light**: The Caps Lock indicator light doesn't turn on. This issue is fixable, but I’m not experienced enough to handle it.
 - **RGB Light Effects**: RGB light effects might be slightly misaligned.
-#### For a fully functional firmware without issues, [flash](https://github.com/irfanjmdn/royalkludge-r65/tree/master#flashinginstalling-the-firmware) the [original firmware file](Original%20RK%20R65%20Firmware%2020240311.hex). We don't have the source for this specific precompiled file, unfortunately.
+#### For a fully functional firmware without issues, [flash](#flashinginstalling-the-firmware) the [original firmware file](Original%20RK%20R65%20Firmware%2020240311.hex). We don't have the source for this specific precompiled file, unfortunately.
 
 ## Guide
 
@@ -49,7 +49,7 @@ Included here are all the files for the R65: firmware, keymaps, VIA json, PCB di
 2. **Load the Firmware File**  
    Open QMK Toolbox and load the `.bin` or `.hex` file.
 
-3. **Enter Bootloader Mode**  
+3. **[Enter Bootloader Mode](#entering-bootloader-mode)**  
    Reset the keyboard into bootloader mode.
 
 4. **Flash the Firmware**  
