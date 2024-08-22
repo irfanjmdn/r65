@@ -59,7 +59,7 @@ Included here are all the files for the R65: firmware, keymaps, VIA json, PCB di
 
 - **Option 1**: Hold the Reset switch on the PCB while connecting the USB cable.
 - **Option 2**: Hold the Escape key while connecting the USB cable (this will also erase settings).
-- **Option 3**: Press `Fn+Shift+Tab` if using the default firmware.
+- **Option 3**: Press `Fn+Shift+Esc` if using the default firmware.
 - **Option 4**: Press `Fn+Tab` if you’ve flashed the keyboard with a QMK keymap.
 
 ## Contributing
