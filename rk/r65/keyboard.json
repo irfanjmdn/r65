@@ -1,7 +1,7 @@
 {
-    "manufacturer": "HS",
+    "manufacturer": "RK",
     "keyboard_name": "Royal Kludge R65",
-    "maintainer": "sdk66",
+    "maintainer": "sdk66, irfanjmdn",
     "bootloader": "wb32-dfu",
     "diode_direction": "ROW2COL",
     "encoder": {
