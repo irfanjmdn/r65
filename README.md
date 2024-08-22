@@ -1,5 +1,16 @@
 # Royal Kludge R65 QMK/VIA + SOCD feature
 ![The Royal Kludge keyboard](r65.png)
+
+---
+
+### DISCLAIMER
+
+**The source code of this keyboard's firmware is unfinished and [some issues](#known-issues) aren't fully fixed yet.**
+
+To developers who would want to contribute, any and all help would be greatly appreciated! Feel free to submit improvements, fixes, or suggestions.
+
+---
+
 ## Overview
 
 #### This repository only contains essential files for the WIRED version of the Royal Kludge R65 (ANSI layout). For the ISO layout or other Royal Kludge keyboard variants, visit sdk66’s [QMK Firmware Repository](https://github.com/hangshengkeji/qmk_firmware/tree/master/keyboards/rk).
@@ -10,8 +21,8 @@ Included here are all the files for the R65: firmware, keymaps, VIA json, PCB di
 
 ## Known Issues
 
-- **Caps Lock Indicator Light**: The Caps Lock indicator light doesn't turn on. This issue is fixable, but I’m not experienced enough to handle it.
-- **RGB Light Effects**: RGB light effects might be slightly misaligned.
+- [ ] **Caps Lock Indicator Light**: The Caps Lock indicator light doesn't turn on. This issue is fixable, but I’m not experienced enough to handle it.
+- [ ] **RGB Light Effects**: RGB light effects might be slightly misaligned.
 #### For a fully functional firmware without issues, [flash](#flashinginstalling-the-firmware) the [original firmware file](Original%20RK%20R65%20Firmware%2020240311.hex). We don't have the source for this specific precompiled file, unfortunately.
 
 ## Guide
@@ -61,6 +72,3 @@ Included here are all the files for the R65: firmware, keymaps, VIA json, PCB di
 - **Option 2**: Hold the Escape key while connecting the USB cable (this will also erase settings).
 - **Option 3**: Press `Fn+Shift+Esc`.
 
-## Contributing
-
-To all developers who would want to contribute, any and all help would be greatly appreciated! Feel free to submit improvements, fixes, or suggestions.
