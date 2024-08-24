@@ -21,5 +21,5 @@
    (Includes SignalRGB + VIA support)
 
 3. **`[NOT RECOMMENDED]` SRGB + VIA + SOCD**  
-   `make rk/r65:via-socd`  
+   `make rk/r65:srgb-via-socd`  
    (Includes SignalRGB + VIA + SOCD support)
