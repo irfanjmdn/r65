@@ -1,4 +1,4 @@
-# Royal Kludge R65 with QMK & VIA (with SnapTap/SOCD mod)
+# Royal Kludge R65 + QMK&VIA (with SnapTap/SOCD mod)
 
 ![Royal Kludge R65 Keyboard](r65.png)
 
