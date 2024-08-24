@@ -9,17 +9,17 @@
 ## Firmware Options
 
 1. **SignalRGB**  
-   `qmk compile -kb rk/r65 -km srgb`  
+   `make rk/r65:srgb`  
    (Plain SignalRGB, without added features)
 
 1. **SignalRGB & SOCD**  
-   `qmk compile -kb rk/r65 -km srgb-socd`  
+   `make rk/r65:srgb-socd`  
    (SignalRGB with SOCD functionality, recommended for gamers)
 
 2. **`[NOT RECOMMENDED]` SRGB + VIA**  
-   `qmk compile -kb rk/r65 -km srgb-via`
+   `make rk/r65:srgb-via`
    (Includes SignalRGB + VIA support)
 
 3. **`[NOT RECOMMENDED]` SRGB + VIA + SOCD**  
-   `qmk compile -kb rk/r65 -km via-socd`  
+   `make rk/r65:via-socd`  
    (Includes SignalRGB + VIA + SOCD support)
