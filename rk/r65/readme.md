@@ -4,7 +4,7 @@
 * **Supported Hardware:** Royal Kludge R65 (ANSI)
 * **Hardware Availability:** [Royal Kludge's official website](http://www.rkgaming.com)
 
-### Read this [guide](https://github.com/irfanjmdn/royalkludge-r65#guide) before building the firmware. 
+### Read this [guide](https://github.com/irfanjmdn/r65/tree/signalrgb#guide) before building the firmware. 
 
 ## Firmware Options
 
