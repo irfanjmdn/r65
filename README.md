@@ -22,11 +22,12 @@ To developers who would want to contribute, any and all help would be greatly ap
 
 ## Overview
 
-The Royal Kludge RKR65 is a 66-key RGB backlit keyboard with Chartreuse, Brown, or Blue switches. It offers a gasket structure for a soft typing experience, knob adjustment, firmware updates, ergonomic design, and hot-swappable keys.
+The Royal Kludge RKR65 is a 66-key RGB backlit keyboard with Chartreuse, Brown, or Blue switches. It offers a gasket structure for a soft typing experience, knob adjustment, ergonomic design, and hot-swappable keys.
 
 When I bought this keyboard, I was told it was open source by the seller, but they never gave out the files on their website. After weeks of emails and follow-ups, I finally received the QMK firmware for the Royal Kludge R65. Special thanks to [sdk66](https://github.com/sdk66) for sharing these files!
 
 ---
+
 
 ## Known Issues
 
