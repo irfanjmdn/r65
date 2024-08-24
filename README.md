@@ -1,56 +1,74 @@
-# Royal Kludge R65 QMK/VIA + SOCD feature
-![The Royal Kludge keyboard](r65.png)
+# Royal Kludge R65 with SignalRGB
 
+![Royal Kludge R65 Keyboard](r65.png)
+
+**⚡ SignalRGB version | [QMK+VIA version](https://github.com/irfanjmdn/r65/tree/master)**
 ---
 
-### DISCLAIMER
+Here you'll find everything you need for the RK65:
 
-**The source code of this keyboard's firmware is unfinished and [some issues](#known-issues) aren't fully fixed yet.**
+- Firmware
+- Keymaps
+- SignalRGB Plugin
+- PCB Diagram
+- SnapTap/SOCD Mod
+
+## DISCLAIMER
+
+**This branch only contains files for the WIRED version of the Royal Kludge R65 (ANSI layout). For the ISO layout or other Royal Kludge keyboard variants, visit sdk66’s [QMK Firmware Repository](https://github.com/hangshengkeji/qmk_firmware/tree/master/keyboards/rk).**
 
 To developers who would want to contribute, any and all help would be greatly appreciated! Feel free to submit improvements, fixes, or suggestions.
 
 ---
 
-## Overview
-
-#### This repository only contains essential files for the WIRED version of the Royal Kludge R65 (ANSI layout). For the ISO layout or other Royal Kludge keyboard variants, visit sdk66’s [QMK Firmware Repository](https://github.com/hangshengkeji/qmk_firmware/tree/master/keyboards/rk).
-
-When I bought this keyboard, I was told it was open source by the seller, but they never gave out the files. After weeks of emails and follow-ups, I finally received the QMK firmware for the Royal Kludge R65. Special thanks to [sdk66](https://github.com/sdk66) for sharing these files!
-
-Included here are all the files for the R65: firmware, keymaps, VIA json, PCB diagram, and an additional SnapTap/SOCD mod for the keyboard.
-
 ## Known Issues
 
-- [ ] **Caps Lock Indicator Light**: The Caps Lock indicator light doesn't turn on. This issue is fixable, but I’m not experienced enough to handle it.
-- [ ] **RGB Light Effects**: RGB light effects might be slightly misaligned.
-#### For a fully functional firmware without issues, [flash](#flashinginstalling-the-firmware) the [original firmware file](Original%20RK%20R65%20Firmware%2020240311.hex). We don't have the source for this specific precompiled file, unfortunately.
+### SignalRGB + VIA
 
+Please note that SignalRGB and VIA can not run simultaneously. To avoid conflicts:
+
+- Close VIA or its browser tab before running SignalRGB.
+- Alternatively, close SignalRGB before using VIA.
+
+The issue arises because both use the `raw_hid_receive` solution, causing interference.
+
+### Caps Lock Indicator
+
+- The Caps Lock indicator light doesn't turn on. 
+
+This issue is very likely fixable, but I’m not experienced enough to handle it.
+
+---
 ## Guide
 
 ### Building the Firmware
+For more information, visit [SignalRGB/building-firmware-from-source](https://docs.signalrgb.com/qmk/building-firmware-from-source).
 
 1. **Install QMK MSYS**  
    Download and install [QMK MSYS](https://msys.qmk.fm).
 
 2. **Set Up QMK MSYS**  
-   Open QMK MSYS and run the command:  
+   Open QMK MSYS and run these commands:  
    ```bash
-   qmk setup
+   mkdir SignalRGB
+   cd SignalRGB
+   git clone https://github.com/SRGBmods/QMK.git
+   cd QMK
    ```
-   A folder will be installed at `C:/Users/%USERNAME%/qmk_firmware`.
+   A folder will be installed at `C:/Users/%USERNAME%/SignalRGB/QMK`.
 
 3. **Add Keyboard Files**  
-   Download this repository and move the `rk/r65` folder into your `qmk_firmware/keyboards/` folder.
+   Download this repository and move the `rk/r65` folder into your `QMK/keyboards/` folder.
 
 4. **Compile the Firmware**  
    Run the following command in QMK MSYS:  
    ```bash
-   qmk compile -kb rk/r65 -km via
+   make rk/r65:srgb
    ```  
-   (Available options: default/via/via-socd).
+   (Available options: srgb/srgb-socd/srgb-via/srgb-via-socd).
 
 5. **Locate the Firmware File**  
-   Find the compiled `.bin` or `.hex` file in the root of the `qmk_firmware` folder.
+   Find the compiled `.bin` or `.hex` file in the root of the `QMK` folder.
 
 ### Flashing/Installing the Firmware
 
@@ -65,6 +83,17 @@ Included here are all the files for the R65: firmware, keymaps, VIA json, PCB di
 
 4. **Flash the Firmware**  
    Click 'Flash', then 'Exit DFU' once the flashing process is complete.
+
+### Setting up SignalRGB
+
+1. **Install SignalRGB**  
+   Download and install the [SignalRGB software](https://signalrgb.com/download/).
+
+2. **Move Plugin File**  
+   After installing, copy [`SignalRGB-for-RK-R65.js`](SignalRGB%20for%20RK%20R65.js) to `%userprofile%/Documents/WhirlwindFX/plugins`.
+
+3. **Restart SignalRGB**  
+   Restart SignalRGB and enjoy.
 
 ### Entering Bootloader Mode
 
