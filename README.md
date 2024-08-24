@@ -11,6 +11,7 @@ Here you'll find everything you need for the RK65:
 - Keymaps
 - VIA json
 - PCB Diagram
+- Snap Tap/SOCD mod
 
 ## DISCLAIMER
 
