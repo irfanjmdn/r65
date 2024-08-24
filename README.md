@@ -1,6 +1,6 @@
 # Royal Kludge R65 QMK&VIA (with SnapTap/SOCD mod)
 
-![Royal Kludge R65 Keyboard](r65.png)
+![Royal Kludge R65 Keyboard](via-r65.png)
 
 **⚡ QMK+VIA version | [SignalRGB version](https://github.com/irfanjmdn/r65/tree/signalrgb/)**
 ---
