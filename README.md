@@ -34,19 +34,19 @@ When I bought this keyboard, I was told it was open source by the seller, but th
 
 ### For a fully functional firmware without issues, [flash](#flashinginstalling-the-firmware) the [original firmware file](Original%20RK%20R65%20Firmware%2020240311.hex). We don't have the source for this specific precompiled file, unfortunately.
 
-### ⌨ Caps Lock Indicator
+### RGB Lighting Effects on VIA
+
+- RGB effects with VIA might be <sup>slightly</sup> misaligned.
+
+This is due to the RGB matrix layout in the [`keyboard.json`](rk/r65/keyboard.json) not being set properly. Any help to fix this would be appreciated.
+
+_Alternatively, you can use the [SignalRGB version](https://github.com/irfanjmdn/r65/tree/signalrgb) to properly control the RGB lights of this keyboard._
+
+### Caps Lock Indicator
 
 - The Caps Lock indicator light doesn't turn on. 
 
 This issue is very likely fixable, but I’m not experienced enough to handle it.
-
-### ⌨ RGB Lighting Effects on VIA
-
-- RGB effects with VIA might be slightly misaligned.
-
-This is due to the RGB matrix layout in the [`keyboard.json`](rk/r65/keyboard.json) not being set properly. Not experienced enough to handle this, too.
-
-(Alternatively, you can use the [SignalRGB version](https://github.com/irfanjmdn/r65/tree/signalrgb) to properly control the RGB lights of this keyboard.)
 
 ---
 
