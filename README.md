@@ -1,11 +1,19 @@
-# Royal Kludge R65 QMK/VIA + SOCD feature
-![The Royal Kludge keyboard](r65.png)
+# Royal Kludge R65 with QMK & VIA (with SnapTap/SOCD mod)
 
+![Royal Kludge R65 Keyboard](r65.png)
+
+**⚡ QMK+VIA version | [SignalRGB version](https://github.com/irfanjmdn/r65/signalrgb/master)**
 ---
 
-### DISCLAIMER
+Here you'll find everything you need for the RK65:
 
-**The source code of this keyboard's firmware is unfinished and [some issues](#known-issues) aren't fully fixed yet.**
+- Firmware
+- Keymaps
+- PCB Diagram
+
+## DISCLAIMER
+
+**This branch only contains files for the WIRED version of the Royal Kludge R65 (ANSI layout). For the ISO layout or other Royal Kludge keyboard variants, visit sdk66’s [QMK Firmware Repository](https://github.com/hangshengkeji/qmk_firmware/tree/master/keyboards/rk).**
 
 To developers who would want to contribute, any and all help would be greatly appreciated! Feel free to submit improvements, fixes, or suggestions.
 
@@ -13,11 +21,9 @@ To developers who would want to contribute, any and all help would be greatly ap
 
 ## Overview
 
-#### This repository only contains essential files for the WIRED version of the Royal Kludge R65 (ANSI layout). For the ISO layout or other Royal Kludge keyboard variants, visit sdk66’s [QMK Firmware Repository](https://github.com/hangshengkeji/qmk_firmware/tree/master/keyboards/rk).
+The Royal Kludge RKR65 is a 66-key RGB backlit keyboard with Chartreuse, Brown, or Blue switches. It offers a gasket structure for a soft typing experience, knob adjustment, firmware updates, ergonomic design, and hot-swappable keys.
 
-When I bought this keyboard, I was told it was open source by the seller, but they never gave out the files. After weeks of emails and follow-ups, I finally received the QMK firmware for the Royal Kludge R65. Special thanks to [sdk66](https://github.com/sdk66) for sharing these files!
-
-Included here are all the files for the R65: firmware, keymaps, VIA json, PCB diagram, and an additional SnapTap/SOCD mod for the keyboard.
+When I bought this keyboard, I was told it was open source by the seller, but they never gave out the files on their website. After weeks of emails and follow-ups, I finally received the QMK firmware for the Royal Kludge R65. Special thanks to [sdk66](https://github.com/sdk66) for sharing these files!
 
 ## Known Issues
 
