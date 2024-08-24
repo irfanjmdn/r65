@@ -11,7 +11,7 @@ Here you'll find everything you need for the RK65:
 - Keymaps
 - SignalRGB Plugin
 - PCB Diagram
-- SnapTap/SOCD Mod
+- Snap Tap/SOCD Mod
 
 ## DISCLAIMER
 
