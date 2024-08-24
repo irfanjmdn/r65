@@ -32,13 +32,13 @@ When I bought this keyboard, I was told it was open source by the seller, but th
 
 ### For a fully functional firmware without issues, [flash](#flashinginstalling-the-firmware) the [original firmware file](Original%20RK%20R65%20Firmware%2020240311.hex). We don't have the source for this specific precompiled file, unfortunately.
 
-### Caps Lock Indicator
+### ⌨ Caps Lock Indicator
 
 - The Caps Lock indicator light doesn't turn on. 
 
 This issue is very likely fixable, but I’m not experienced enough to handle it.
 
-### RGB Lighting Effects on VIA
+### ⌨ RGB Lighting Effects on VIA
 
 - RGB effects with VIA might be slightly misaligned.
 
