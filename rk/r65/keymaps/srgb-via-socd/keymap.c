@@ -1,5 +1,10 @@
 // @irfanjmdn
 
+#include "features/socd_cleaner.h"
+
+socd_cleaner_t socd_v = {{KC_W, KC_S}, SOCD_CLEANER_LAST};
+socd_cleaner_t socd_h = {{KC_A, KC_D}, SOCD_CLEANER_LAST};
+
 #include QMK_KEYBOARD_H
 
 // clang-format off
