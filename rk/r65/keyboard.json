@@ -22,6 +22,10 @@
         "rows": ["A1", "A2", "A3", "A4", "C13"]
     },
     "processor": "WB32FQ95",
+    "indicators": {
+        "caps_lock": "B0",
+        "on_state": 0
+    },
     "rgb_matrix": {
         "animations": {
             "alphas_mods": true,
