@@ -98,3 +98,10 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 #endif
 
 // clang-format on
+
+bool process_record_user(uint16_t keycode, keyrecord_t* record) {
+  if (!process_socd_cleaner(keycode, record, &socd_v)) { return false; }
+  if (!process_socd_cleaner(keycode, record, &socd_h)) { return false; }
+
+  return true;
+}
