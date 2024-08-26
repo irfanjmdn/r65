@@ -32,12 +32,6 @@ Please note that SignalRGB and VIA can not run simultaneously. To avoid conflict
 
 The issue arises because both use the `raw_hid_receive` solution, causing interference.
 
-### Caps Lock Indicator
-
-- The Caps Lock indicator light doesn't turn on. 
-
-This issue is very likely fixable, but I’m not experienced enough to handle it.
-
 ---
 ## Guide
 
