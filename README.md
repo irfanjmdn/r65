@@ -15,7 +15,7 @@ Here you'll find everything you need for the RK65:
 
 ## DISCLAIMER
 
-This branch only contains files for the WIRED version of the Royal Kludge R65 (ANSI layout). 
+This branch only contains files for the **wired ANSI-layout** version of the Royal Kludge R65. 
 
 For the ISO layout or other Royal Kludge keyboard variants, visit sdk66’s [QMK Firmware Repository](https://github.com/hangshengkeji/qmk_firmware/tree/master/keyboards/rk).
 
