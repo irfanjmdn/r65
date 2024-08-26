@@ -93,3 +93,34 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 #endif
 
 // clang-format on
+
+bool gu_togg_on = false;
+
+bool process_record_user(uint16_t keycode, keyrecord_t* record) {
+
+    if (keycode == GU_TOGG && record->event.pressed) {
+        gu_togg_on = !gu_togg_on; 
+    }
+
+    return true;
+}
+
+void matrix_init_kb(void) {
+  setPinOutput(B10);
+  setPinOutput(B11);
+  matrix_init_user();
+}
+
+void matrix_scan_user(void) {
+    if (gu_togg_on) {
+        writePin(B10, 0);
+    } else {
+        writePin(B10, 1);
+    }
+
+    if (layer_state_is(2)) {
+        writePin(B11, 0);
+    } else {
+        writePin(B11, 1);
+    }
+}

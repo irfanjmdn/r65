@@ -27,6 +27,7 @@
         "on_state": 0
     },
     "rgb_matrix": {
+		"sleep": true,
         "animations": {
             "alphas_mods": true,
             "band_pinwheel_sat": true,
@@ -144,7 +145,7 @@
     },
     "url": "",
     "usb": {
-        "device_version": "0.0.2",
+        "device_version": "0.0.5",
         "force_nkro": true,
         "pid": "0xE453",
         "suspend_wakeup_delay": 1000,
