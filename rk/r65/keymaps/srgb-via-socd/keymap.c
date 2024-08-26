@@ -23,7 +23,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  _______, _______, _______, _______, _______, _______, _______, _______, _______, MO(8), _______, KC_HOME, KC_SCRL, RGB_MOD, KC_INS,
  _______, TO(0), TO(2), _______, _______, _______, _______, _______, _______, MO(8), _______, KC_PSCR, _______, KC_PAUSE,
  _______, _______, _______, _______, _______, _______, _______, _______, RGB_HUI, _______, _______, MO(8), RGB_VAI, KC_END,
- _______, _______, _______, EE_CLR, _______, _______, RGB_SPD, RGB_VAD, RGB_SPI
+ _______, GU_TOGG, _______, EE_CLR, _______, _______, RGB_SPD, RGB_VAD, RGB_SPI
  ),
 		
  [2] = LAYOUT( /* LAYER 2 */
@@ -55,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  _______, _______, _______, _______, _______, _______, _______, _______, _______, MO(8), _______, KC_HOME, KC_SCRL, RGB_MOD, KC_INS,
  _______, TO(4), TO(6), _______, _______, _______, _______, _______, _______, MO(8), _______, KC_PSCR, _______, KC_PAUSE,
  _______, _______, _______, _______, _______, _______, _______, _______, RGB_HUI, _______, _______, MO(8), RGB_VAI, KC_END,
- _______, _______, _______, EE_CLR, _______, _______, RGB_SPD, RGB_VAD, RGB_SPI
+ _______, GU_TOGG, _______, EE_CLR, _______, _______, RGB_SPD, RGB_VAD, RGB_SPI
  ),
  
  [6] = LAYOUT( /* LAYER 6 */
@@ -99,9 +99,33 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 
 // clang-format on
 
+bool gu_togg_on = false;
+
 bool process_record_user(uint16_t keycode, keyrecord_t* record) {
   if (!process_socd_cleaner(keycode, record, &socd_v)) { return false; }
   if (!process_socd_cleaner(keycode, record, &socd_h)) { return false; }
-
+  if (keycode == GU_TOGG && record->event.pressed) {
+        gu_togg_on = !gu_togg_on; 
+  }
   return true;
+}
+
+void matrix_init_kb(void) {
+  setPinOutput(B10);
+  setPinOutput(B11);
+  matrix_init_user();
+}
+
+void matrix_scan_user(void) {
+    if (gu_togg_on) {
+        writePin(B10, 0);
+    } else {
+        writePin(B10, 1);
+    }
+
+    if (layer_state_is(2)) {
+        writePin(B11, 0);
+    } else {
+        writePin(B11, 1);
+    }
 }

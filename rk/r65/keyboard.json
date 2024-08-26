@@ -22,7 +22,12 @@
         "rows": ["A1", "A2", "A3", "A4", "C13"]
     },
     "processor": "WB32FQ95",
+    "indicators": {
+        "caps_lock": "B0",
+        "on_state": 0
+    },
     "rgb_matrix": {
+		"sleep": true,
         "animations": {
             "alphas_mods": true,
             "band_pinwheel_sat": true,
@@ -140,7 +145,7 @@
     },
     "url": "",
     "usb": {
-        "device_version": "0.0.2",
+        "device_version": "0.0.5",
         "force_nkro": true,
         "pid": "0xE453",
         "suspend_wakeup_delay": 1000,
@@ -166,7 +171,7 @@
                 {"matrix": [0, 11], "x": 11, "y": 0},
                 {"matrix": [0, 12], "x": 12, "y": 0},
                 {"matrix": [0, 13], "x": 13, "y": 0, "w": 2},
-                {"matrix": [0, 14], "x": 14, "y": 0},
+                {"matrix": [0, 14], "x": 15, "y": 0},
                 {"matrix": [1, 0], "x": 0, "y": 1, "w": 1.5},
                 {"matrix": [1, 1], "x": 1.5, "y": 1},
                 {"matrix": [1, 2], "x": 2.5, "y": 1},
