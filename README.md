@@ -38,8 +38,6 @@ Special thanks to [sdk66](https://github.com/sdk66) for sharing the initial firm
 
 None
 
-### For a fully functional firmware, [flash](#flashinginstalling-the-firmware) the [original firmware file](Original%20RK%20R65%20Firmware%2020240311.hex).
-
 ---
 
 ## Guide
