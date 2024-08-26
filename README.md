@@ -15,7 +15,9 @@ Here you'll find everything you need for the RK65:
 
 ## DISCLAIMER
 
-**This branch only contains files for the WIRED version of the Royal Kludge R65 (ANSI layout). For the ISO layout or other Royal Kludge keyboard variants, visit sdk66’s [QMK Firmware Repository](https://github.com/hangshengkeji/qmk_firmware/tree/master/keyboards/rk).**
+This branch only contains files for the WIRED version of the Royal Kludge R65 (ANSI layout). 
+
+For the ISO layout or other Royal Kludge keyboard variants, visit sdk66’s [QMK Firmware Repository](https://github.com/hangshengkeji/qmk_firmware/tree/master/keyboards/rk).
 
 To developers who would want to contribute, any and all help would be greatly appreciated! Feel free to submit improvements, fixes, or suggestions.
 
@@ -25,20 +27,18 @@ To developers who would want to contribute, any and all help would be greatly ap
 
 The Royal Kludge RKR65 is a 66-key RGB backlit keyboard with Chartreuse, Brown, or Blue switches. It offers a gasket structure for a soft typing experience, knob adjustment, ergonomic design, and hot-swappable keys.
 
-When I bought this keyboard, I was told it was open source by the seller, but they never gave out the files on their website. After weeks of emails and follow-ups, I finally received the QMK firmware for the Royal Kludge R65. Special thanks to [sdk66](https://github.com/sdk66) for sharing these files!
+When I bought this keyboard, I was told it was open source by the seller, but they never gave out the files on their website. After weeks of emails and follow-ups, I finally received the QMK firmware for the Royal Kludge R65. 
+
+Special thanks to [sdk66](https://github.com/sdk66) for sharing the initial firmware files, and [iamdanielv](https://github.com/iamdanielv) for fixing a major portion of the code!
 
 ---
 
 
 ## Known Issues
 
-### For a fully functional firmware without issues, [flash](#flashinginstalling-the-firmware) the [original firmware file](Original%20RK%20R65%20Firmware%2020240311.hex). We don't have the source for this specific precompiled file, unfortunately.
+None
 
-### Caps Lock Indicator
-
-- The Caps Lock indicator light doesn't turn on. 
-
-This issue is very likely fixable, but I’m not experienced enough to handle it.
+### For a fully functional firmware, [flash](#flashinginstalling-the-firmware) the [original firmware file](Original%20RK%20R65%20Firmware%2020240311.hex).
 
 ---
 
