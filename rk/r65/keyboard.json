@@ -1,7 +1,6 @@
 {
     "manufacturer": "RK",
     "keyboard_name": "Royal Kludge R65",
-    "maintainer": "sdk66, irfanjmdn",
     "bootloader": "wb32-dfu",
     "diode_direction": "ROW2COL",
     "encoder": {
@@ -11,6 +10,7 @@
     },
     "features": {
         "bootmagic": true,
+        "command": true,
         "encoder": true,
         "extrakey": true,
         "mousekey": true,
@@ -21,13 +21,23 @@
         "cols": ["C9", "C8", "C7", "A8", "C6", "B14", "B13", "B12", "C1", "C2", "A10", "C3", "A6", "C4", "C5"],
         "rows": ["A1", "A2", "A3", "A4", "C13"]
     },
+    "eeprom": {
+        "driver": "wear_leveling",
+        "wear_leveling": {
+            "backing_size": 4096,
+            "driver": "spi_flash"
+        }
+    },
+    "dynamic_keymap": {
+        "layer_count": 9
+    },
     "processor": "WB32FQ95",
     "indicators": {
         "caps_lock": "B0",
         "on_state": 0
     },
     "rgb_matrix": {
-		"sleep": true,
+        "sleep": true,
         "animations": {
             "alphas_mods": true,
             "band_pinwheel_sat": true,
@@ -145,14 +155,14 @@
     },
     "url": "",
     "usb": {
-        "device_version": "0.0.5",
-        "force_nkro": true,
+        "device_version": "0.1.0",
         "pid": "0xE453",
-        "suspend_wakeup_delay": 1000,
-        "vid": "0x342D"
+        "vid": "0x342D",
+        "suspend_wakeup_delay": 1000
     },
     "ws2812": {
-        "pin": "B15"
+        "pin": "B15",
+        "driver": "spi"
     },
     "layouts": {
         "LAYOUT": {
