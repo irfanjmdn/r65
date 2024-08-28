@@ -2,7 +2,7 @@
 
 ![Royal Kludge R65 Keyboard](srgb-r65.png)
 
-**⚡ SignalRGB version | [QMK+VIA version](https://github.com/irfanjmdn/r65/tree/master)**
+**💡 SignalRGB version | ⚡ [QMK+VIA version](https://github.com/irfanjmdn/r65/tree/master)**
 ---
 
 Here you'll find everything you need for the RK65:
