@@ -19,7 +19,7 @@ This branch only contains files for the **wired ANSI-layout** version of the Roy
 
 - ⌨ 🔌 For the **ISO layout** or other Royal Kludge keyboard variants, visit sdk66’s [QMK Firmware Repo](https://github.com/hangshengkeji/qmk_firmware/tree/master/keyboards/rk).
 - ⌨ 🔨 For a more **customized** version of the firmware for the R65, visit iamdanielv's [R65 Custom Firmware Repo](https://github.com/iamdanielv/kb_rk_r65).
-- ⌨ 💡 For the **SignalRGB** version of this firmware, visit the [R65 SignalRGB repo](https://github.com/irfanjmdn/r65/tree/signalrgb).
+- ⌨ ⚡ For the **QMK/VIA only** version of this firmware, visit the [R65 QMK&VIA Repo](https://github.com/irfanjmdn/r65).
 
 To developers who would want to contribute, any and all help would be greatly appreciated! Feel free to submit improvements, fixes, or suggestions.
 
