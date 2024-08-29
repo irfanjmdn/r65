@@ -33,8 +33,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     }
 
     if (fn_mode) {
-        if (keycode >= KC_1 && keycode <= KC_EQL) {
+        if (keycode >= KC_1 && keycode <= KC_0 || keycode == KC_MINS || keycode == KC_EQL ) {
             uint8_t index = keycode - KC_1;
+
+            if (keycode == KC_MINS) { index = 10;}
+            else if (keycode == KC_EQL) { index = 11;}
+
             if (record->event.pressed) {
                 register_code(pgm_read_word(&number_to_function[index]));
             } else {
