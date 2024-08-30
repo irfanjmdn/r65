@@ -13,9 +13,9 @@ Here you'll find everything you need for the RK65:
 - PCB Diagram
 - Snap Tap/SOCD mod
 
-## DISCLAIMER
+## ⚠ DISCLAIMER ⚠
 
-This branch only contains files for the **wired ANSI-layout** version of the Royal Kludge R65. 
+This branch only contains files for the **wired ANSI-layout** version of the Royal Kludge R65. Please review the full [disclaimer](DISCLAIMER.md) before using the files provided in this repository.
 
 - ⌨ 🔌 For the **ISO layout** or other Royal Kludge keyboard variants, visit sdk66’s [QMK Firmware Repo](https://github.com/hangshengkeji/qmk_firmware/tree/master/keyboards/rk).
 - ⌨ 🔨 For a more **customized** version of the firmware for the R65, visit iamdanielv's [R65 Custom Firmware Repo](https://github.com/iamdanielv/kb_rk_r65).
