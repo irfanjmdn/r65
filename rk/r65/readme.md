@@ -1,6 +1,6 @@
 # Royal Kludge R65 (ANSI) Firmware
 
-* **Keyboard Maintainer:** [sdk66](https://github.com/sdk66)
+* **Keyboard Maintainer:** [sdk66](https://github.com/sdk66), [irfanjmdn](https://github.com/irfanjmdn)
 * **Supported Hardware:** Royal Kludge R65 (ANSI)
 * **Hardware Availability:** [Royal Kludge's official website](http://www.rkgaming.com)
 
