@@ -4,18 +4,22 @@
 * **Supported Hardware:** Royal Kludge R65 (ANSI)
 * **Hardware Availability:** [Royal Kludge's official website](http://www.rkgaming.com)
 
-### Read this [guide](https://github.com/irfanjmdn/royalkludge-r65#guide) before building the firmware. 
+### Read this [guide](https://github.com/irfanjmdn/r65/tree/signalrgb#guide) before building the firmware. 
 
 ## Firmware Options
 
-1. **Default:**  
-   `qmk compile -kb rk/r65 -km default`  
-   (No VIA functionality)
+1. **SignalRGB only:**  
+   `make rk/r65:srgb`  
+   (SignalRGB functionality only)
 
-2. **VIA Enabled:**  
-   `qmk compile -kb rk/r65 -km via`  
-   (Includes VIA support)
+2. **Incl. SOCD:** 
+   `make rk/r65:srgb-socd`  
+   (SignalRGB with Snap Tap/SOCD)
 
-3. **VIA & SOCD:**  
-   `qmk compile -kb rk/r65 -km via-socd`  
-   (Includes VIA and SOCD functionality, similar to Razer's Snap Tap and Wooting's SOCD)
+3. **Incl. VIA:**  
+   `make rk/r65:srgb-via`  
+   (SignalRGB with VIA functionality)
+
+4. **Incl. VIA & SOCD:**  
+   `make rk/r65:srgb-via-socd`  
+   (SignalRGB with VIA and SOCD)
