@@ -56,7 +56,7 @@ For more information, visit [SignalRGB/building-firmware-from-source](https://do
    A folder will be installed at `C:/Users/%USERNAME%/SignalRGB/QMK`.
 
 3. **Add Keyboard Files**  
-   Download this repository and move the `rk/r65` folder into your `QMK/keyboards/` folder.
+   [Download this repository](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irfanjmdn/r65/tree/signalrgb/rk/r65) and move the `rk/r65` folder into your `QMK/keyboards/` folder.
 
 4. **Compile the Firmware**  
    Run the following command in QMK MSYS:  
