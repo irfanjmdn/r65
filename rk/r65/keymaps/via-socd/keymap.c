@@ -19,21 +19,33 @@ enum layer_names {
 };
 
 enum custom_keycodes {
-    SWITCH_FN = SAFE_RANGE
+    SWITCH_FN = SAFE_RANGE,
+	SOCD_TOGGLE
 };
 
 bool fn_mode = false;
+bool socd_enabled = true;
 
 const uint16_t number_to_function[] PROGMEM = {
     KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    if (!process_socd_cleaner(keycode, record, &socd_v)) { 
-        return false; 
+    switch (keycode) {
+        case SOCD_TOGGLE:
+            if (record->event.pressed) {
+                socd_enabled = !socd_enabled;
+            }
+            return false;
     }
-    if (!process_socd_cleaner(keycode, record, &socd_h)) { 
-        return false; 
+
+    if (socd_enabled) {
+        if (!process_socd_cleaner(keycode, record, &socd_v)) { 
+            return false; 
+        }
+        if (!process_socd_cleaner(keycode, record, &socd_h)) { 
+            return false; 
+        }
     }
 
     if (keycode == SWITCH_FN) {
@@ -44,11 +56,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     }
 
     if (fn_mode) {
-        if ( ( keycode >= KC_1 && keycode <= KC_0 ) || keycode == KC_MINS || keycode == KC_EQL ) {
+        if ((keycode >= KC_1 && keycode <= KC_0) || keycode == KC_MINS || keycode == KC_EQL) {
             uint8_t index = keycode - KC_1;
-			
-            if (keycode == KC_MINS) { index = 10;}
-            else if (keycode == KC_EQL) { index = 11;}
+
+            if (keycode == KC_MINS) { index = 10; }
+            else if (keycode == KC_EQL) { index = 11; }
 
             if (record->event.pressed) {
                 register_code(pgm_read_word(&number_to_function[index]));
@@ -84,7 +96,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  KC_GRV, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, _______, _______,
  _______, _______, _______, _______, _______, _______, _______, _______, _______, MO(8), _______, KC_HOME, KC_SCRL, RGB_MOD, KC_INS,
  _______, TO(0), TO(2), _______, _______, _______, _______, _______, _______, MO(8), _______, KC_PSCR, _______, KC_PAUSE,
- _______, _______, _______, _______, _______, NK_TOGG, _______, _______, RGB_HUI, _______, _______, MO(8), RGB_VAI, KC_END,
+ _______, _______, _______, _______, SOCD_TOGGLE, NK_TOGG, _______, _______, RGB_HUI, _______, _______, MO(8), RGB_VAI, KC_END,
  SWITCH_FN, GU_TOGG, _______, EE_CLR, _______, _______, RGB_SPD, RGB_VAD, RGB_SPI
  ),
 		
@@ -100,7 +112,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  KC_GRV, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, _______, _______,
  _______, _______, _______, _______, _______, _______, _______, _______, _______, MO(8), _______, KC_HOME, KC_SCRL, RGB_MOD, KC_INS,
  _______, TO(0), TO(2), _______, _______, _______, _______, _______, _______, MO(8), _______, KC_PSCR, _______, KC_PAUSE,
- _______, _______, _______, _______, _______, NK_TOGG, _______, _______, RGB_HUI, _______, _______, MO(8), RGB_VAI, KC_END,
+ _______, _______, _______, _______, SOCD_TOGGLE, NK_TOGG, _______, _______, RGB_HUI, _______, _______, MO(8), RGB_VAI, KC_END,
  SWITCH_FN, _______, _______, EE_CLR, _______, _______, RGB_SPD, RGB_VAD, RGB_SPI
  ),
  
