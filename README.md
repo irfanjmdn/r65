@@ -33,15 +33,52 @@ When I bought this keyboard, I was told it was open source by the seller, but th
 
 Special thanks to [sdk66](https://github.com/sdk66) for sharing the initial firmware files, and [iamdanielv](https://github.com/iamdanielv) for fixing a major portion of the code!
 
----
-
-
 ## Known Issues
 
 None
 
 ---
 
+## Firmware Options
+
+Make sure to read the [guide](https://github.com/irfanjmdn/r65/tree/signalrgb#guide) before proceeding.
+***
+1. **SignalRGB Only**  [⏬Redirect](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW%20RKR65%5D%20SRGB%20only.hex) 
+   ```
+   make rk/r65:srgb
+   ```
+   - **Features:**  
+     - ✅ SignalRGB  
+     - ⬜ VIA  
+     - ⬜ SOCD/Snap Tap (Toggle with Fn+V)
+***
+2. **SignalRGB with SOCD**  [⏬Redirect](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW%20RKR65%5D%20SRGB%20with%20SOCD.hex) 
+   ```
+   make rk/r65:srgb-socd
+   ```
+   - **Features:**  
+     - ✅ SignalRGB  
+     - ⬜ VIA  
+     - ✅ SOCD/Snap Tap (Toggle with Fn+V)
+***
+3. **SignalRGB with VIA** [⏬Redirect](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW%20RKR65%5D%20SRGB%20with%20VIA.hex) 
+   ```
+   make rk/r65:srgb-via
+   ```
+   - **Features:**  
+     - ✅ SignalRGB  
+     - ✅ VIA  
+     - ⬜ SOCD/Snap Tap (Toggle with Fn+V)
+***
+4. **SignalRGB with VIA & SOCD**  [⏬Redirect](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW%20RKR65%5D%20SRGB%20with%20VIA%20%26%20SOCD.hex) 
+   ```
+   make rk/r65:srgb-via-socd
+   ```
+   - **Features:**  
+     - ✅ SignalRGB  
+     - ✅ VIA  
+     - ✅ SOCD/Snap Tap (Toggle with Fn+V)
+***
 ## Guide
 
 ### Building the Firmware
