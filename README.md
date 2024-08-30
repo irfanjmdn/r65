@@ -34,7 +34,7 @@ The issue arises because both use the `raw_hid_receive` solution, causing interf
 
 Make sure to read the [guide](https://github.com/irfanjmdn/r65/tree/signalrgb#guide) before proceeding.
 ***
-### 1. **SignalRGB Only**  [⏬Redirect](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW%20RKR65%5D%20SRGB%20only.hex) 
+### 1. **SignalRGB Only**  [⏬Redirect](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW0.1.0%20RKR65%5D%20SRGB%20only.hex) 
    ```
    make rk/r65:srgb
    ```
@@ -43,7 +43,7 @@ Make sure to read the [guide](https://github.com/irfanjmdn/r65/tree/signalrgb#gu
      - ⬜ VIA  
      - ⬜ SOCD/Snap Tap (Toggle with Fn+V)
 ***
-### 2. **SignalRGB with SOCD**  [⏬Redirect](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW%20RKR65%5D%20SRGB%20with%20SOCD.hex) 
+### 2. **SignalRGB with SOCD**  [⏬Redirect](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW0.1.0%20RKR65%5D%20SRGB%20with%20SOCD.hex) 
    ```
    make rk/r65:srgb-socd
    ```
@@ -52,7 +52,7 @@ Make sure to read the [guide](https://github.com/irfanjmdn/r65/tree/signalrgb#gu
      - ⬜ VIA  
      - ✅ SOCD/Snap Tap (Toggle with Fn+V)
 ***
-### 3. **SignalRGB with VIA** [⏬Redirect](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW%20RKR65%5D%20SRGB%20with%20VIA.hex) 
+### 3. **SignalRGB with VIA** [⏬Redirect](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW0.1.0%20RKR65%5D%20SRGB%20with%20VIA.hex) 
    ```
    make rk/r65:srgb-via
    ```
@@ -61,7 +61,7 @@ Make sure to read the [guide](https://github.com/irfanjmdn/r65/tree/signalrgb#gu
      - ✅ VIA  
      - ⬜ SOCD/Snap Tap (Toggle with Fn+V)
 ***
-### 4. **SignalRGB with VIA & SOCD**  [⏬Redirect](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW%20RKR65%5D%20SRGB%20with%20VIA%20%26%20SOCD.hex) 
+### 4. **SignalRGB with VIA & SOCD**  [⏬Redirect](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW0.1.0%20RKR65%5D%20SRGB%20with%20VIA%20%26%20SOCD.hex) 
    ```
    make rk/r65:srgb-via-socd
    ```
