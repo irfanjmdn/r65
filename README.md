@@ -57,7 +57,7 @@ None
    A folder will be installed at `C:/Users/%USERNAME%/qmk_firmware`.
 
 3. **Add Keyboard Files**  
-   Download this repository and move the `rk/r65` folder into your `qmk_firmware/keyboards/` folder.
+   [Download this repository](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irfanjmdn/r65/tree/master/rk/r65) and move the `rk/r65` folder into your `qmk_firmware/keyboards/` folder.
 
 4. **Compile the Firmware**  
    Run the following command in QMK MSYS:  
