@@ -12,7 +12,7 @@
    `make rk/r65:srgb`  
    (SignalRGB functionality only)
 
-2. **Incl. SOCD:** 
+2. **Incl. SOCD [Fn+V to toggle]:** 
    `make rk/r65:srgb-socd`  
    (SignalRGB with Snap Tap/SOCD)
 
