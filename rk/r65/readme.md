@@ -4,7 +4,7 @@
 * **Supported Hardware:** Royal Kludge R65 (ANSI)
 * **Hardware Availability:** [Royal Kludge's official website](http://www.rkgaming.com)
 
-### Read this [guide](https://github.com/irfanjmdn/royalkludge-r65#guide) before building the firmware. 
+### Read this [guide](https://github.com/irfanjmdn/r65#guide) before building the firmware. 
 
 ## Firmware Options
 
@@ -16,6 +16,6 @@
    `qmk compile -kb rk/r65 -km via`  
    (Includes VIA support)
 
-3. **VIA & SOCD:**  
+3. **VIA with SOCD [Fn+V to toggle]:**  
    `qmk compile -kb rk/r65 -km via-socd`  
    (Includes VIA and SOCD functionality, similar to Razer's Snap Tap and Wooting's SOCD)
