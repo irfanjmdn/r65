@@ -1,14 +1,13 @@
-# 🧪🚦 Royal Kludge R65 with Vial/VialRGB
+# 🧪 Royal Kludge R65 with Vial / VialRGB
 ![Royal Kludge R65 Keyboard](vialrgb-r65.png)
 
-
-### Branches
+### Select your branch:
 
 | Branch        | Features              | Description                                             | Link                                                                                   |
 |---------------|-----------------------|---------------------------------------------------------|----------------------------------------------------------------------------------------|
-| Master   | QMK, VIA      | The main branch *(with optional Snap Tap feature[^1][^2])*.           | [View on GitHub](https://github.com/irfanjmdn/r65/tree/master)                         |
-| SignalRGB | QMK, VIA + SignalRGB | Stable branch with VIA and SignalRGB support.     | [View on GitHub](https://github.com/irfanjmdn/r65/tree/signalrgb)                      |
-| VialRGB       | QMK, VIA, Vial /+ SignalRGB      | Experimental branch with Vial and Vial+SignalRGB.    | **You are here**                                                      |
+| 🔨 Master   | QMK, VIA      | The main branch *(with optional Snap Tap feature[^1][^2])*.           | [Go to branch](https://github.com/irfanjmdn/r65/tree/master)                         |
+| 💡 SignalRGB | QMK, VIA + SignalRGB | Stable branch with VIA and SignalRGB support.     | [Go to branch](https://github.com/irfanjmdn/r65/tree/signalrgb)                      |
+| 🧪 VialRGB       | QMK, VIA, Vial /+ SignalRGB      | Experimental branch with Vial and Vial+SignalRGB.    | **You are here**                                                      |
 
 ---
 
