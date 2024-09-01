@@ -1,8 +1,23 @@
-# Royal Kludge R65 with SignalRGB
+# 🧪🚦 Royal Kludge R65 with Vial + SignalRGB
+![Royal Kludge R65 Keyboard](vialrgb-r65.png)
 
-![Royal Kludge R65 Keyboard](srgb-r65.png)
 
-**💡 SignalRGB version | ⚡ [QMK+VIA version](https://github.com/irfanjmdn/r65/tree/master)**
+### Branches
+
+| Branch        | Features              | Description                                             | Link                                                                                   |
+|---------------|-----------------------|---------------------------------------------------------|----------------------------------------------------------------------------------------|
+| Master   | QMK, VIA      | The main branch *(with optional Snap Tap feature[^1][^2])*.           | [View on GitHub](https://github.com/irfanjmdn/r65/tree/master)                         |
+| SignalRGB | QMK, VIA + SignalRGB | Stable branch with VIA and SignalRGB support.     | [View on GitHub](https://github.com/irfanjmdn/r65/tree/signalrgb)                      |
+| VialRGB       | QMK, VIA, Vial + SignalRGB      | Experimental branch with Vial and SignalRGB.    | **You are here**                                                      |
+
+---
+
+
+## ❓ VIA, Vial, and VialRGB: What's the Difference?
+- **VIA**: An easy-to-use, popular, but closed-source GUI for keyboard layout customization. VIA only supports basic remapping, RGB, and default layers.
+- **Vial**: An open-source fork of VIA with more features.[^3] Vial includes features like [Tap Dance](https://get.vial.today/manual/tap-dance.html), combos, and key overrides. [👨‍🏫 Guide for noobs](https://get.vial.today/manual/first-use.html)
+- **VialRGB**: Includes all the features mentioned above, but has [SignalRGB](https://signalrgb.com/) support. [⚠ Known Issues](https://github.com/irfanjmdn/r65/tree/vialrgb#known-issues)
+
 ---
 
 ## ⚠ DISCLAIMER ⚠
@@ -10,66 +25,25 @@
 This branch only contains files for the **wired ANSI-layout** version of the Royal Kludge R65. Please review the full [disclaimer](DISCLAIMER.md) before using the files provided in this repository.
 
 - ⌨ 🔌 For the **ISO layout** or other Royal Kludge keyboard variants, visit sdk66’s [QMK Firmware Repo](https://github.com/hangshengkeji/qmk_firmware/tree/master/keyboards/rk).
-- ⌨ 🔨 For a more **customized** version of the firmware for the R65, visit iamdanielv's [R65 Custom Firmware Repo](https://github.com/iamdanielv/kb_rk_r65).
-- ⌨ ⚡ For the **QMK/VIA only** version of this firmware, visit the [R65 QMK&VIA Repo](https://github.com/irfanjmdn/r65).
+- ⌨ 🛠 For a more **customized** version of the firmware for the R65, visit iamdanielv's [R65 Custom Firmware Repo](https://github.com/iamdanielv/kb_rk_r65).
 
 To developers who would want to contribute, any and all help would be greatly appreciated! Feel free to submit improvements, fixes, or suggestions.
 
+---
 
 ## Known Issues
 
-### SignalRGB + VIA
+### Using SignalRGB & Vial simultaneously
 
-Please note that SignalRGB and VIA can not run simultaneously. To avoid conflicts:
+Please note that SignalRGB and Vial cannot run simultaneously. To avoid conflicts:
 
-- Close VIA or its browser tab before running SignalRGB.
-- Alternatively, close SignalRGB before using VIA.
+- Close Vial or its browser tab before running SignalRGB.
+- Alternatively, close SignalRGB before using Vial.
 
 The issue arises because both use the `raw_hid_receive` solution, causing interference.
 
 ---
----
 
-## Firmware Options
-
-Make sure to read the [guide](https://github.com/irfanjmdn/r65/tree/signalrgb#guide) before proceeding.
-***
-### 1. **SignalRGB Only**  [⏬Redirect](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW0.1.0%20RKR65%5D%20SRGB%20only.hex) 
-   ```
-   make rk/r65:srgb
-   ```
-   - **Features:**  
-     - ✅ SignalRGB  
-     - ⬜ VIA  
-     - ⬜ SOCD/Snap Tap (Toggle with Fn+V)
-***
-### 2. **SignalRGB with SOCD**  [⏬Redirect](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW0.1.0%20RKR65%5D%20SRGB%20with%20SOCD.hex) 
-   ```
-   make rk/r65:srgb-socd
-   ```
-   - **Features:**  
-     - ✅ SignalRGB  
-     - ⬜ VIA  
-     - ✅ SOCD/Snap Tap (Toggle with Fn+V)
-***
-### 3. **SignalRGB with VIA** [⏬Redirect](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW0.1.0%20RKR65%5D%20SRGB%20with%20VIA.hex) 
-   ```
-   make rk/r65:srgb-via
-   ```
-   - **Features:**  
-     - ✅ SignalRGB  
-     - ✅ VIA  
-     - ⬜ SOCD/Snap Tap (Toggle with Fn+V)
-***
-### 4. **SignalRGB with VIA & SOCD**  [⏬Redirect](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW0.1.0%20RKR65%5D%20SRGB%20with%20VIA%20%26%20SOCD.hex) 
-   ```
-   make rk/r65:srgb-via-socd
-   ```
-   - **Features:**  
-     - ✅ SignalRGB  
-     - ✅ VIA  
-     - ✅ SOCD/Snap Tap (Toggle with Fn+V)
-***
 ## Guide
 
 ### Building the Firmware
@@ -81,22 +55,22 @@ For more information, visit [SignalRGB/building-firmware-from-source](https://do
 2. **Set Up QMK MSYS**  
    Open QMK MSYS and run these commands:  
    ```bash
-   mkdir SignalRGB
-   cd SignalRGB
-   git clone https://github.com/SRGBmods/QMK.git
-   cd QMK
+   mkdir Vial
+   cd Vial
+   git clone https://github.com/SRGBmods/VialQMK
+   cd VialQMK
    ```
-   A folder will be installed at `C:/Users/%USERNAME%/SignalRGB/QMK`.
+   A folder will be installed at `C:/Users/%USERNAME%/Vial/VialQMK`.
 
 3. **Add Keyboard Files**  
-   [Download this repository](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irfanjmdn/r65/tree/signalrgb/rk/r65) and move the `rk/r65` folder into your `QMK/keyboards/` folder.
+   [Download this repository](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irfanjmdn/r65/tree/vialrgb/rk/r65) and move the `rk/r65` folder into your `VialQMK/keyboards/` folder.
 
 4. **Compile the Firmware**  
    Run the following command in QMK MSYS:  
    ```bash
-   make rk/r65:srgb
+   make rk/r65:vialrgb
    ```  
-   (Available options: srgb/srgb-socd/srgb-via/srgb-via-socd).
+   (Available options: default/vial/vial-socd/vialrgb/vialrgb-socd).
 
 5. **Locate the Firmware File**  
    Find the compiled `.bin` or `.hex` file in the root of the `QMK` folder.
@@ -115,7 +89,19 @@ For more information, visit [SignalRGB/building-firmware-from-source](https://do
 4. **Flash the Firmware**  
    Click 'Flash', then 'Exit DFU' once the flashing process is complete.
 
+### Using Vial
+
+0. **Close any instance of VIA/SignalRGB.**
+
+1. **Open Vial**
+   Go to https://vial.rocks and connect your keyboard.
+
+2. **Use Vial**
+   Use Vial and enjoy.
+
 ### Setting up SignalRGB
+
+0. **Close any instance of Vial.**
 
 1. **Install SignalRGB**  
    Download and install the [SignalRGB software](https://signalrgb.com/download/).
@@ -132,3 +118,6 @@ For more information, visit [SignalRGB/building-firmware-from-source](https://do
 - **Option 2**: Hold the Escape key while connecting the USB cable (this will also erase settings).
 - **Option 3**: Press `Fn+Shift+Esc`.
 
+[^1]: Snap Tap/SOCD is a feature that prioritizes the latest input between two selected keys without the need to release the previous one, allowing for faster directional changes. This can enhance gameplay in FPS games by enabling quicker counter-strafing and more responsive movements. 
+[^2]: The Snap Tap/SOCD feature is available in every branch of the repository.
+[^3]: You should use Vial if you have experience with QMK/VIA. If you are new to modifying keyboards, I recommend you [use VIA](https://usevia.app) instead. 

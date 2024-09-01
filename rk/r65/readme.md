@@ -4,22 +4,26 @@
 * **Supported Hardware:** Royal Kludge R65 (ANSI)
 * **Hardware Availability:** [Royal Kludge's official website](http://www.rkgaming.com)
 
-### Read this [guide](https://github.com/irfanjmdn/r65/tree/signalrgb#guide) before building the firmware. 
+### Read this [guide](https://github.com/irfanjmdn/r65/tree/vialrgb#guide) before building the firmware. 
 
 ## Firmware Options
 
-1. **SignalRGB only:**  
-   `make rk/r65:srgb`  
-   (SignalRGB functionality only)
+1. **Default:**  
+   `make rk/r65:default`  
+   (No Vial functionality)
 
-2. **Incl. SOCD:**   
-   `make rk/r65:srgb-socd`  
-   (SignalRGB with Snap Tap/SOCD)
+2. **VialRGB** [⚠ Known Issues](https://github.com/irfanjmdn/r65/tree/vialrgb#known-issues)
+   `make rk/r65 -kb rk/r65 -km vialrgb`
+   (Vial with SignalRGB functionality)
 
-3. **Incl. VIA:**  
-   `make rk/r65:srgb-via`  
-   (SignalRGB with VIA functionality)
+3. **VialRGB with SOCD** [⚠ Known Issues](https://github.com/irfanjmdn/r65/tree/vialrgb#known-issues)
+   `make rk/r65 -kb rk/r65 -km vialrgb-socd`
+   (Vial with SignalRGB & Snap Tap/SOCD functionality)
 
-4. **Incl. VIA & SOCD:**  
-   `make rk/r65:srgb-via-socd`  
-   (SignalRGB with VIA and SOCD)
+4. **Vial only:**  
+   `make rk/r65 -km vial`  
+   (Includes Vial support without SignalRGB)
+
+5. **Vial with SOCD:**  
+   `make rk/r65 -km vial-socd`  
+   (Vial with Snap Tap/SOCD functionality)

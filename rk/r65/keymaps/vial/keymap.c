@@ -15,7 +15,7 @@ enum layer_names {
 };
 
 enum custom_keycodes {
-    SWITCH_FN = SAFE_RANGE
+    SWITCH_FN = QK_KB_0
 };
 
 bool fn_mode = false;
@@ -138,7 +138,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [_BASE]     = {ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
     [_BASE_FN]  = {ENCODER_CCW_CW(_______, _______)},
-    [_MAC]      = {ENCODER_CCW_CW(_______, _______)},
+    [_MAC]      = {ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
     [_MAC_FN]   = {ENCODER_CCW_CW(_______, _______)},
     [_ALT_A]    = {ENCODER_CCW_CW(_______, _______)},
 	[_ALT_A_FN] = {ENCODER_CCW_CW(_______, _______)},

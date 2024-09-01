@@ -1,4 +1,4 @@
-<img src="srgb-r65.png" alt="Royal Kludge R65 Keyboard" />
+<img src="vialrgb-r65.png" alt="Royal Kludge R65 Keyboard" />
 
 <div align="center">
 <h3>Disclaimer:</h3>
