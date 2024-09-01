@@ -104,7 +104,7 @@ For more information, visit [SignalRGB/building-firmware-from-source](https://do
    (Available options: vialrgb/vialrgb-socd).
 
 5. **Locate the Firmware File**  
-   Find the compiled `.bin` or `.hex` file in the root of the `QMK` folder.
+   Find the compiled `.bin` or `.hex` file in the root of the `VialQMK` folder.
 
 ### Flashing/Installing the Firmware
 
