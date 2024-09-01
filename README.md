@@ -12,10 +12,9 @@
 
 ---
 
-
-## ⚠ DISCLAIMER ⚠
-
-This branch only contains files for the **wired ANSI-layout** version of the Royal Kludge R65. Please review the full [disclaimer](DISCLAIMER.md) before using the files provided in this repository.
+> [!IMPORTANT] 
+> This branch only contains files for the **wired ANSI-layout** version of the Royal Kludge R65.
+> Please review the full [disclaimer](DISCLAIMER.md) before using the files provided in this repository.
 
 - ⌨ 🔌 For the **ISO layout** or other Royal Kludge keyboard variants, visit sdk66’s [QMK Firmware Repo](https://github.com/hangshengkeji/qmk_firmware/tree/master/keyboards/rk).
 - ⌨ 🔨 For a more **customized** version of the firmware for the R65, visit iamdanielv's [R65 Custom Firmware Repo](https://github.com/iamdanielv/kb_rk_r65).
@@ -40,7 +39,7 @@ None
 
 ## Guide
 
-### Building the Firmware
+### > 🏗 Building the Firmware
 
 1. **Install QMK MSYS**  
    Download and install [QMK MSYS](https://msys.qmk.fm).
@@ -65,7 +64,7 @@ None
 5. **Locate the Firmware File**  
    Find the compiled `.bin` or `.hex` file in the root of the `qmk_firmware` folder.
 
-### Flashing/Installing the Firmware
+### > ⚡ Flashing/Installing the Firmware
 
 1. **Install QMK Toolbox**  
    Download and install [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases).
@@ -79,7 +78,7 @@ None
 4. **Flash the Firmware**  
    Click 'Flash', then 'Exit DFU' once the flashing process is complete.
 
-### Entering Bootloader Mode
+### > 🔓 Entering Bootloader Mode
 
 - **Option 1**: Hold the Reset switch on the PCB while connecting the USB cable.
 - **Option 2**: Hold the Escape key while connecting the USB cable (this will also erase settings).
