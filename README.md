@@ -1,14 +1,14 @@
-# Royal Kludge R65 VIA
+# ⚡ Royal Kludge R65 VIA
 
 ![Royal Kludge R65 Keyboard](via-r65.png)
 
-### Branches
+### Select your branch:
 
 | Branch        | Features              | Description                                             | Link                                                                                   |
 |---------------|-----------------------|---------------------------------------------------------|----------------------------------------------------------------------------------------|
-| Master   | QMK, VIA      | The main branch *(with optional Snap Tap feature[^1][^2])*.           | **You are here**                         |
-| SignalRGB | QMK, VIA + SignalRGB | Stable branch with VIA and SignalRGB support.     | [View on GitHub](https://github.com/irfanjmdn/r65/tree/signalrgb)                      |
-| VialRGB       | QMK, VIA, Vial + SignalRGB      | Experimental branch with Vial and SignalRGB.[^3]    | [View on GitHub](https://github.com/irfanjmdn/r65/tree/vialrgb)                                                      |
+| 🔨 Master   | QMK, VIA      | The main branch *(with optional Snap Tap feature[^1][^2])*.           | **You are here**                         |
+| 💡 SignalRGB | QMK, VIA + SignalRGB | Stable branch with VIA and SignalRGB support.     | [Go to branch](https://github.com/irfanjmdn/r65/tree/signalrgb)                      |
+| 🧪 VialRGB       | QMK, VIA, Vial + SignalRGB      | Experimental branch with Vial and SignalRGB.[^3]    | [Go to branch](https://github.com/irfanjmdn/r65/tree/vialrgb)                                                      |
 
 ---
 
@@ -17,7 +17,7 @@
 > Please review the full [disclaimer](DISCLAIMER.md) before using the files provided in this repository.
 
 - ⌨ 🔌 For the **ISO layout** or other Royal Kludge keyboard variants, visit sdk66’s [QMK Firmware Repo](https://github.com/hangshengkeji/qmk_firmware/tree/master/keyboards/rk).
-- ⌨ 🔨 For a more **customized** version of the firmware for the R65, visit iamdanielv's [R65 Custom Firmware Repo](https://github.com/iamdanielv/kb_rk_r65).
+- ⌨ 🛠 For a more **customized** version of the firmware for the R65, visit iamdanielv's [R65 Custom Firmware Repo](https://github.com/iamdanielv/kb_rk_r65).
 
 To developers who would want to contribute, any and all help would be greatly appreciated! Feel free to submit improvements, fixes, or suggestions.
 
@@ -29,7 +29,7 @@ The Royal Kludge RKR65 is a 66-key RGB backlit keyboard with Chartreuse, Brown, 
 
 When I bought this keyboard, I was told it was open source by the seller, but they never gave out the files on their website. After weeks of emails and follow-ups, I finally received the QMK firmware for the Royal Kludge R65. 
 
-Special thanks to [sdk66](https://github.com/sdk66) for sharing the initial firmware files, and [iamdanielv](https://github.com/iamdanielv) for fixing a major portion of the code!
+> Special thanks to @sdk66 for sharing the initial firmware files, and @iamdanielv for fixing a major portion of the code!
 
 ## Known Issues
 
