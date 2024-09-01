@@ -46,10 +46,10 @@ To developers who would want to contribute, any and all help would be greatly ap
 
 | **Option**                          | **Command**                          | **Vial** | **SignalRGB** | **SOCD[^1]** | **Download prebuilt firmware** |
 |-------------------------------------|--------------------------------------|---------|---------------|--------------|--------------------------------|
-| **Vial Only**                       | `make rk/r65 -km vial`               | ✅      | ⬜            | ⬜            | [⏬Download](https://github.com/irfanjmdn/r65/blob/vialrgb/%5BFW0.1.0%20RKR65%5D%20Vial%20only.hex)          |
-| **Vial with SOCD**                  | `make rk/r65 -km vial-socd`          | ✅      | ⬜            | ✅            | [⏬Download](https://github.com/irfanjmdn/r65/blob/vialrgb/%5BFW0.1.0%20RKR65%5D%20Vial%20with%20SOCD.hex)          |
-| **VialRGB** [⚠ Known Issues](https://github.com/irfanjmdn/r65/tree/vialrgb#known-issues) | `make rk/r65 -kb rk/r65 -km vialrgb` | ✅      | ✅            | ⬜            | [⏬Download](https://github.com/irfanjmdn/r65/blob/vialrgb/%5BFW0.1.0%20RKR65%5D%20VialRGB.hex)          |
-| **VialRGB with SOCD** [⚠ Known Issues](https://github.com/irfanjmdn/r65/tree/vialrgb#known-issues) | `make rk/r65 -kb rk/r65 -km vialrgb-socd` | ✅ | ✅ | ✅ | [⏬Download](https://github.com/irfanjmdn/r65/blob/vialrgb/%5BFW0.1.0%20RKR65%5D%20VialRGB%20with%20SOCD.hex) |
+| **Vial Only**                       | `make rk/r65:vial`               | ✅      | ⬜            | ⬜            | [⏬Download](https://github.com/irfanjmdn/r65/blob/vialrgb/%5BFW0.1.0%20RKR65%5D%20Vial%20only.hex)          |
+| **Vial with SOCD**                  | `make rk/r65:vial-socd`          | ✅      | ⬜            | ✅            | [⏬Download](https://github.com/irfanjmdn/r65/blob/vialrgb/%5BFW0.1.0%20RKR65%5D%20Vial%20with%20SOCD.hex)          |
+| **VialRGB** [⚠ Known Issues](https://github.com/irfanjmdn/r65/tree/vialrgb#known-issues) | `make rk/r65:vialrgb` | ✅      | ✅            | ⬜            | [⏬Download](https://github.com/irfanjmdn/r65/blob/vialrgb/%5BFW0.1.0%20RKR65%5D%20VialRGB.hex)          |
+| **VialRGB with SOCD** [⚠ Known Issues](https://github.com/irfanjmdn/r65/tree/vialrgb#known-issues) | `make rk/r65:vialrgb-socd` | ✅ | ✅ | ✅ | [⏬Download](https://github.com/irfanjmdn/r65/blob/vialrgb/%5BFW0.1.0%20RKR65%5D%20VialRGB%20with%20SOCD.hex) |
 
 ---
 
