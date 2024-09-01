@@ -2,7 +2,13 @@
 
 ![Royal Kludge R65 Keyboard](srgb-r65.png)
 
-**💡 SignalRGB version | ⚡ [QMK+VIA version](https://github.com/irfanjmdn/r65/tree/master)**
+### Branches
+
+| Branch        | Features              | Description                                             | Link                                                                                   |
+|---------------|-----------------------|---------------------------------------------------------|----------------------------------------------------------------------------------------|
+| Master   | QMK, VIA      | The main branch *(with optional Snap Tap feature[^1][^2])*.           | [View on Github](https://github.com/irfanjmdn/r65/tree/master)                         |
+| SignalRGB | QMK, VIA + SignalRGB | Stable branch with VIA and SignalRGB support.     | **You are here**                      |
+| VialRGB       | QMK, VIA, Vial + SignalRGB      | Experimental branch with Vial and SignalRGB.[^3]    | [View on GitHub](https://github.com/irfanjmdn/r65/tree/vialrgb)                                                      |
 ---
 
 ## ⚠ DISCLAIMER ⚠
