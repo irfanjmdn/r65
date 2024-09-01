@@ -1,4 +1,4 @@
-# 🧪🚦 Royal Kludge R65 with Vial + SignalRGB
+# 🧪🚦 Royal Kludge R65 with Vial/VialRGB
 ![Royal Kludge R65 Keyboard](vialrgb-r65.png)
 
 
@@ -8,7 +8,7 @@
 |---------------|-----------------------|---------------------------------------------------------|----------------------------------------------------------------------------------------|
 | Master   | QMK, VIA      | The main branch *(with optional Snap Tap feature[^1][^2])*.           | [View on GitHub](https://github.com/irfanjmdn/r65/tree/master)                         |
 | SignalRGB | QMK, VIA + SignalRGB | Stable branch with VIA and SignalRGB support.     | [View on GitHub](https://github.com/irfanjmdn/r65/tree/signalrgb)                      |
-| VialRGB       | QMK, VIA, Vial + SignalRGB      | Experimental branch with Vial and SignalRGB.    | **You are here**                                                      |
+| VialRGB       | QMK, VIA, Vial /+ SignalRGB      | Experimental branch with Vial and Vial+SignalRGB.    | **You are here**                                                      |
 
 ---
 
@@ -47,7 +47,38 @@ The issue arises because both use the `raw_hid_receive` solution, causing interf
 ## Guide
 
 ### Building the Firmware
+
 For more information, visit [SignalRGB/building-firmware-from-source](https://docs.signalrgb.com/qmk/building-firmware-from-source).
+
+#### 🧪 **For Vial Only Firmware**
+
+1. **Install QMK MSYS**  
+   Download and install [QMK MSYS](https://msys.qmk.fm).
+
+2. **Set Up QMK MSYS for Vial**  
+   Open QMK MSYS and run these commands:  
+   ```bash
+   mkdir Vial
+   cd Vial
+   git clone https://github.com/vial-kb/vial-qmk
+   cd vial-qmk
+   ```
+   A folder will be installed at `C:/Users/%USERNAME%/Vial/vial-qmk`.
+
+3. **Add Keyboard Files**  
+   [Download this repository](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irfanjmdn/r65/tree/vialrgb/rk/r65) and move the `rk/r65` folder into your `vial-qmk/keyboards/` folder.
+
+4. **Compile the Firmware**  
+   Run the following command in QMK MSYS:  
+   ```bash
+   make rk/r65:vial
+   ```  
+   (Available options: default/vial/vial-socd).
+
+5. **Locate the Firmware File**  
+   Find the compiled `.bin` or `.hex` file in the root of the `vial-qmk` folder.
+
+#### 🧪💡 **For VialRGB (Vial + SignalRGB) Firmware**
 
 1. **Install QMK MSYS**  
    Download and install [QMK MSYS](https://msys.qmk.fm).
@@ -55,8 +86,8 @@ For more information, visit [SignalRGB/building-firmware-from-source](https://do
 2. **Set Up QMK MSYS**  
    Open QMK MSYS and run these commands:  
    ```bash
-   mkdir Vial
-   cd Vial
+   mkdir VialRGB
+   cd VialRGB
    git clone https://github.com/SRGBmods/VialQMK
    cd VialQMK
    ```
@@ -70,7 +101,7 @@ For more information, visit [SignalRGB/building-firmware-from-source](https://do
    ```bash
    make rk/r65:vialrgb
    ```  
-   (Available options: default/vial/vial-socd/vialrgb/vialrgb-socd).
+   (Available options: vialrgb/vialrgb-socd).
 
 5. **Locate the Firmware File**  
    Find the compiled `.bin` or `.hex` file in the root of the `QMK` folder.
