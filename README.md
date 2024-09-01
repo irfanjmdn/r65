@@ -44,6 +44,19 @@ The issue arises because both use the `raw_hid_receive` solution, causing interf
 
 ---
 
+## Firmware Options
+
+Make sure to read the [guide](https://github.com/irfanjmdn/r65/tree/vialrgb#guide) before proceeding.
+
+| **Option**                          | **Command**                          | **Vial** | **SignalRGB** | **SOCD[^1]** | **Download prebuilt firmware** |
+|-------------------------------------|--------------------------------------|---------|---------------|--------------|--------------------------------|
+| **Vial Only**                       | `make rk/r65 -km vial`               | ✅      | ⬜            | ⬜            | [⏬Download](https://github.com/irfanjmdn/r65/blob/vialrgb/%5BFW0.1.0%20RKR65%5D%20Vial%20only.hex)          |
+| **Vial with SOCD**                  | `make rk/r65 -km vial-socd`          | ✅      | ⬜            | ✅            | [⏬Download](https://github.com/irfanjmdn/r65/blob/vialrgb/%5BFW0.1.0%20RKR65%5D%20Vial%20with%20SOCD.hex)          |
+| **VialRGB** [⚠ Known Issues](https://github.com/irfanjmdn/r65/tree/vialrgb#known-issues) | `make rk/r65 -kb rk/r65 -km vialrgb` | ✅      | ✅            | ⬜            | [⏬Download](https://github.com/irfanjmdn/r65/blob/vialrgb/%5BFW0.1.0%20RKR65%5D%20VialRGB.hex)          |
+| **VialRGB with SOCD** [⚠ Known Issues](https://github.com/irfanjmdn/r65/tree/vialrgb#known-issues) | `make rk/r65 -kb rk/r65 -km vialrgb-socd` | ✅ | ✅ | ✅ | [⏬Download](https://github.com/irfanjmdn/r65/blob/vialrgb/%5BFW0.1.0%20RKR65%5D%20VialRGB%20with%20SOCD.hex) |
+
+---
+
 ## Guide
 
 ### Building the Firmware
