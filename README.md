@@ -1,14 +1,14 @@
-# Royal Kludge R65 with SignalRGB
+# 💡 Royal Kludge R65 with SignalRGB
 
 ![Royal Kludge R65 Keyboard](srgb-r65.png)
 
-### Branches
+### Select your branch:
 
 | Branch        | Features              | Description                                             | Link                                                                                   |
 |---------------|-----------------------|---------------------------------------------------------|----------------------------------------------------------------------------------------|
-| Master   | QMK, VIA      | The main branch *(with optional Snap Tap feature[^1][^2])*.           | [View on Github](https://github.com/irfanjmdn/r65/tree/master)                         |
-| SignalRGB | QMK, VIA + SignalRGB | Stable branch with VIA and SignalRGB support.     | **You are here**                      |
-| VialRGB       | QMK, VIA, Vial + SignalRGB      | Experimental branch with Vial and SignalRGB.[^3]    | [View on GitHub](https://github.com/irfanjmdn/r65/tree/vialrgb)                                                      |
+| 🔨 Master   | QMK, VIA      | The main branch *(with optional Snap Tap feature[^1][^2])*.           | [Go to branch](https://github.com/irfanjmdn/r65/tree/master)                         |
+| 💡 SignalRGB | QMK, VIA + SignalRGB | Stable branch with VIA and SignalRGB support.     | **You are here**                      |
+| 🧪 VialRGB       | QMK, VIA, Vial + SignalRGB      | Experimental branch with Vial and SignalRGB.[^3]    | [Go to branch](https://github.com/irfanjmdn/r65/tree/vialrgb)                                                      |
 ---
 
 > [!IMPORTANT] 
@@ -16,10 +16,11 @@
 > Please review the full [disclaimer](DISCLAIMER.md) before using the files provided in this repository.
 
 - ⌨ 🔌 For the **ISO layout** or other Royal Kludge keyboard variants, visit sdk66’s [QMK Firmware Repo](https://github.com/hangshengkeji/qmk_firmware/tree/master/keyboards/rk).
-- ⌨ 🔨 For a more **customized** version of the firmware for the R65, visit iamdanielv's [R65 Custom Firmware Repo](https://github.com/iamdanielv/kb_rk_r65).
-- ⌨ ⚡ For the **QMK/VIA only** version of this firmware, visit the [R65 QMK&VIA Repo](https://github.com/irfanjmdn/r65).
+- ⌨ 🛠 For a more **customized** version of the firmware for the R65, visit iamdanielv's [R65 Custom Firmware Repo](https://github.com/iamdanielv/kb_rk_r65).
 
 To developers who would want to contribute, any and all help would be greatly appreciated! Feel free to submit improvements, fixes, or suggestions.
+
+---
 
 > [!WARNING]
 > ## Known Issues
