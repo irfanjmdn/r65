@@ -37,12 +37,13 @@ The issue arises because both use the `raw_hid_receive` solution, causing interf
 ## Firmware Options
 
 Make sure to read the [guide](https://github.com/irfanjmdn/r65/tree/signalrgb#guide) before proceeding.
-| **Redirect**                                                                                     | **Option**                                      | **Command**                            | **Features**                                                   |
-|-------------------------------------------------------------------------------------------------|-------------------------------------------------|----------------------------------------|---------------------------------------------------------------|
-| [⏬Download](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW0.1.0%20RKR65%5D%20SRGB%20only.hex) | **SignalRGB Only**                             | `make rk/r65:srgb`                     | ✅ SignalRGB<br>⬜ VIA<br>⬜ SOCD/Snap Tap |
-| [⏬Download](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW0.1.0%20RKR65%5D%20SRGB%20with%20SOCD.hex) | **SignalRGB with SOCD**                        | `make rk/r65:srgb-socd`                | ✅ SignalRGB<br>⬜ VIA<br>✅ SOCD/Snap Tap |
-| [⏬Download](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW0.1.0%20RKR65%5D%20SRGB%20with%20VIA.hex) | **SignalRGB with VIA**                         | `make rk/r65:srgb-via`                 | ✅ SignalRGB<br>✅ VIA<br>⬜ SOCD/Snap Tap |
-| [⏬Download](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW0.1.0%20RKR65%5D%20SRGB%20with%20VIA%20%26%20SOCD.hex) | **SignalRGB with VIA & SOCD**                  | `make rk/r65:srgb-via-socd`            | ✅ SignalRGB<br>✅ VIA<br>✅ SOCD/Snap Tap |
+
+| **Option**                                      | **Command**                            | **Features**                                                   | **Redirect**                                                                                     |
+|-------------------------------------------------|----------------------------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| **SignalRGB Only**                             | `make rk/r65:srgb`                     | ✅ SignalRGB<br>⬜ VIA<br>⬜ SOCD/Snap Tap                     | [⏬Download](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW0.1.0%20RKR65%5D%20SRGB%20only.hex) |
+| **SignalRGB with SOCD**                        | `make rk/r65:srgb-socd`                | ✅ SignalRGB<br>⬜ VIA<br>✅ SOCD/Snap Tap                     | [⏬Download](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW0.1.0%20RKR65%5D%20SRGB%20with%20SOCD.hex) |
+| **SignalRGB with VIA**                         | `make rk/r65:srgb-via`                 | ✅ SignalRGB<br>✅ VIA<br>⬜ SOCD/Snap Tap                     | [⏬Download](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW0.1.0%20RKR65%5D%20SRGB%20with%20VIA.hex) |
+| **SignalRGB with VIA & SOCD**                  | `make rk/r65:srgb-via-socd`            | ✅ SignalRGB<br>✅ VIA<br>✅ SOCD/Snap Tap                     | [⏬Download](https://github.com/irfanjmdn/r65/blob/signalrgb/%5BFW0.1.0%20RKR65%5D%20SRGB%20with%20VIA%20%26%20SOCD.hex) |
 
 ***
 ## Guide
