@@ -1,17 +1,17 @@
-# Royal Kludge R65 QMK&VIA (with Snap Tap/SOCD mod)
+# Royal Kludge R65 VIA
 
 ![Royal Kludge R65 Keyboard](via-r65.png)
 
-**⚡ QMK+VIA version | 💡 [SignalRGB version](https://github.com/irfanjmdn/r65/tree/signalrgb/)**
+### Branches
+
+| Branch        | Features              | Description                                             | Link                                                                                   |
+|---------------|-----------------------|---------------------------------------------------------|----------------------------------------------------------------------------------------|
+| Master   | QMK, VIA      | The main branch *(with optional Snap Tap feature[^1][^2])*.           | **You are here**                         |
+| SignalRGB | QMK, VIA + SignalRGB | Stable branch with VIA and SignalRGB support.     | [View on GitHub](https://github.com/irfanjmdn/r65/tree/signalrgb)                      |
+| VialRGB       | QMK, VIA, Vial + SignalRGB      | Experimental branch with Vial and SignalRGB.[^3]    | [View on GitHub](https://github.com/irfanjmdn/r65/tree/vialrgb)                                                      |
+
 ---
 
-Here you'll find everything you need for the RK65:
-
-- Firmware
-- Keymaps
-- VIA json
-- PCB Diagram
-- Snap Tap/SOCD mod
 
 ## ⚠ DISCLAIMER ⚠
 
@@ -19,7 +19,6 @@ This branch only contains files for the **wired ANSI-layout** version of the Roy
 
 - ⌨ 🔌 For the **ISO layout** or other Royal Kludge keyboard variants, visit sdk66’s [QMK Firmware Repo](https://github.com/hangshengkeji/qmk_firmware/tree/master/keyboards/rk).
 - ⌨ 🔨 For a more **customized** version of the firmware for the R65, visit iamdanielv's [R65 Custom Firmware Repo](https://github.com/iamdanielv/kb_rk_r65).
-- ⌨ 💡 For the **SignalRGB** version of this firmware, visit the [R65 SignalRGB repo](https://github.com/irfanjmdn/r65/tree/signalrgb).
 
 To developers who would want to contribute, any and all help would be greatly appreciated! Feel free to submit improvements, fixes, or suggestions.
 
@@ -86,3 +85,6 @@ None
 - **Option 2**: Hold the Escape key while connecting the USB cable (this will also erase settings).
 - **Option 3**: Press `Fn+Shift+Esc`.
 
+[^1]: Snap Tap/SOCD is a feature that prioritizes the latest input between two selected keys without the need to release the previous one, allowing for faster directional changes. This can enhance gameplay in FPS games by enabling quicker counter-strafing and more responsive movements. 
+[^2]: The Snap Tap/SOCD feature is available in every branch of the repository.
+[^3]: You should use Vial if you have experience with QMK/VIA. If you are new to modifying keyboards, I recommend you [use VIA](https://usevia.app) instead. 
