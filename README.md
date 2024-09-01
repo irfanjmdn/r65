@@ -108,3 +108,6 @@ For more information, visit [SignalRGB/building-firmware-from-source](https://do
 - **Option 2**: Hold the Escape key while connecting the USB cable (this will also erase settings).
 - **Option 3**: Press `Fn+Shift+Esc`.
 
+[^1]: Snap Tap/SOCD is a feature that prioritizes the latest input between two selected keys without the need to release the previous one, allowing for faster directional changes. This can enhance gameplay in FPS games by enabling quicker counter-strafing and more responsive movements. 
+[^2]: The Snap Tap/SOCD feature is available in every branch of the repository.
+[^3]: You should use Vial if you have experience with QMK/VIA. If you are new to modifying keyboards, I recommend you [use VIA](https://usevia.app) instead. 
