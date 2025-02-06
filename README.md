@@ -14,10 +14,13 @@
 
 > [!IMPORTANT] 
 > This branch only contains files for the **wired ANSI-layout** version of the Royal Kludge R65.
+> **DO NOT** flash this firmware if your keyboard has wireless capabilities.
+> **DO NOT** flash this firmware if you're unsure of your keyboard's variant/don't know much about keyboard modification.
 > Please review the full [disclaimer](DISCLAIMER.md) before using the files provided in this repository.
 
-- ⌨ 🔌 For the **ISO layout** or other Royal Kludge keyboard variants, visit sdk66’s [QMK Firmware Repo](https://github.com/hangshengkeji/qmk_firmware/tree/master/keyboards/rk).
+- ⌨ 🔌 For the **wired ISO variant** of the keyboard, especially for South American users, visit NieblaDev's [ISO Firmware Repo](https://github.com/NieblaDev/R65-ISO-VIA).
 - ⌨ 🛠 For a more **customized** version of the firmware for the R65, visit iamdanielv's [R65 Custom Firmware Repo](https://github.com/iamdanielv/kb_rk_r65).
+- ⌨ 🔌 For all other Royal Kludge keyboard variants, visit sdk66’s [QMK Firmware Repo](https://github.com/hangshengkeji/qmk_firmware/tree/master/keyboards/rk).
 
 To developers who would want to contribute, any and all help would be greatly appreciated! Feel free to submit improvements, fixes, or suggestions.
 
